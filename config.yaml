@@ -1,0 +1,69 @@
+seed: 42
+device: "cuda:0"
+
+data:
+  metadata_csv: "data/splits/musiccaps.csv"
+  audio_root: "data/raw/musiccaps_audio"
+  graph_dir: "data/processed/graphs"
+  mel_dir: "data/processed/mels"
+  label_vocab: "data/processed/label_vocab.json"
+  track_id_col: "track_id"
+  audio_col: "audio_path"
+  text_col: "caption"
+  labels_col: "tags"
+  split_col: "split"
+  top_k_tags: 50
+  min_tag_count: 2
+  mask_label_terms_in_text: false
+
+audio:
+  sample_rate: 22050
+  duration_seconds: 10.0
+  segment_seconds: 2.0
+  n_mfcc: 20
+  n_chroma: 12
+  n_mels: 128
+  hop_length: 512
+
+graph:
+  add_temporal_edges: true
+  add_similarity_edges: true
+  similarity_threshold: 0.82
+  max_similarity_neighbors: 4
+  undirected: true
+
+text:
+  model_name: "bert-base-uncased"
+  max_length: 128
+  freeze_encoder: false
+  unfreeze_last_n_layers: 2
+
+model:
+  gnn_type: "graphsage"
+  hidden_dim: 256
+  gnn_layers: 3
+  dropout: 0.30
+  fusion_heads: 4
+
+train:
+  epochs: 15
+  batch_size: 8
+  num_workers: 2
+  lr_head: 0.001
+  lr_bert: 0.00002
+  weight_decay: 0.0001
+  grad_clip: 1.0
+  patience: 4
+  use_amp: true
+  use_pos_weight: true
+  default_threshold: 0.50
+  output_dir: "results"
+
+contrastive:
+  epochs: 10
+  batch_size: 8
+  lr: 0.0001
+  bert_lr: 0.00002
+  temperature: 0.07
+  projection_dim: 256
+  patience: 3
