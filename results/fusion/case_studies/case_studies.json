@@ -1,0 +1,121 @@
+[
+  {
+    "track_id": "-5xOcMJpTUk.wav",
+    "caption": "A male guitarist plays the guitar and speaks about technique in this online video tutorial. The male voice is strong and commanding, along with guitar string twang sounds, clearly demonstrating the technique. The audio quality is mediocre.",
+    "true_labels": [
+      "passionate",
+      "energetic"
+    ],
+    "top_predictions": [
+      {
+        "label": "male voice",
+        "probability": 0.9776384234428406
+      },
+      {
+        "label": "electric guitar",
+        "probability": 0.8131476640701294
+      },
+      {
+        "label": "amateur recording",
+        "probability": 0.2868373394012451
+      },
+      {
+        "label": "poor audio quality",
+        "probability": 0.17626279592514038
+      },
+      {
+        "label": "acoustic guitar",
+        "probability": 0.1587427407503128
+      }
+    ],
+    "segment_to_token_alignment": {
+      "segment_0": "online",
+      "segment_1": "online",
+      "segment_2": "online",
+      "segment_3": "online",
+      "segment_4": "online"
+    },
+    "heatmap_file": "case_1_cross_attention.png",
+    "graph_file": "case_1_graph_alignment.png"
+  },
+  {
+    "track_id": "-6QGvxvaTkI.wav",
+    "caption": "The low quality recording features a live performance of a traditional song and it consists of an echoing male vocal singing over acoustic strings melody, plucked strings melody and wooden percussion. There is a crowd chattering noise in the background. The recording is a bit noisy and it sounds passionate.",
+    "true_labels": [
+      "low quality",
+      "noisy",
+      "passionate",
+      "live performance"
+    ],
+    "top_predictions": [
+      {
+        "label": "live performance",
+        "probability": 0.9999366998672485
+      },
+      {
+        "label": "low quality",
+        "probability": 0.9997426867485046
+      },
+      {
+        "label": "passionate",
+        "probability": 0.9869187474250793
+      },
+      {
+        "label": "noisy",
+        "probability": 0.9852098822593689
+      },
+      {
+        "label": "emotional",
+        "probability": 0.9498394727706909
+      }
+    ],
+    "segment_to_token_alignment": {
+      "segment_0": "passionate",
+      "segment_1": "passionate",
+      "segment_2": "passionate",
+      "segment_3": "passionate",
+      "segment_4": "passionate"
+    },
+    "heatmap_file": "case_2_cross_attention.png",
+    "graph_file": "case_2_graph_alignment.png"
+  },
+  {
+    "track_id": "-IZbvEO9wzU.wav",
+    "caption": "This is a heavily edited version of a birthday song. The track has been transposed to make the original vocal sound like a little girl which resulted in a chipmunk vocal effect. The piano playing the melody and the electronic drum beat is at an irritatingly higher pitch than normal. This creates a bizarre atmosphere. It could be used in nightmare sequences in video games or TV shows.",
+    "true_labels": [
+      "piano",
+      "electronic drums"
+    ],
+    "top_predictions": [
+      {
+        "label": "electronic drums",
+        "probability": 0.9978971481323242
+      },
+      {
+        "label": "piano",
+        "probability": 0.9290747046470642
+      },
+      {
+        "label": "loud",
+        "probability": 0.4565880000591278
+      },
+      {
+        "label": "pop",
+        "probability": 0.29103216528892517
+      },
+      {
+        "label": "upbeat",
+        "probability": 0.2500442862510681
+      }
+    ],
+    "segment_to_token_alignment": {
+      "segment_0": "piano",
+      "segment_1": "piano",
+      "segment_2": "piano",
+      "segment_3": "piano",
+      "segment_4": "piano"
+    },
+    "heatmap_file": "case_3_cross_attention.png",
+    "graph_file": "case_3_graph_alignment.png"
+  }
+]

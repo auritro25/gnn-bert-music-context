@@ -1,0 +1,5 @@
+{
+  "threshold": 0.5000000000000001,
+  "validation_macro_f1_at_threshold": 0.1599027532799664,
+  "selection_split": "val"
+}
